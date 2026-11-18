@@ -1,0 +1,492 @@
+{
+  "env": "preprd",
+  "awsKeyset": "creds-alias",
+  "settlementApi": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "ecoApi": {
+    "url": {
+      "dev": "",
+      "preprd": ""
+    }
+  },
+  "finEngineApi": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": ""
+    }
+  },
+  "ecoUsers": {
+    "dev": {
+      "user": {
+        "username": "Test1"
+      },
+      "admin": {
+        "username": "admin"
+      }
+    },
+    "preprd": {
+      "user": {
+        "username": "Test1"
+      },
+      "admin": {
+        "username": "admin"
+      }
+    }
+  },
+  "ecoExternalApi": {
+    "url": {
+      "dev": "",
+      "preprd": ""
+    }
+  },
+  "settlementItemTimeboundApi": {
+    "url": {
+      "dev": "",
+      "preprd": ""
+    }
+  },
+  "ecoExternalUsers": {
+    "dev": {
+      "user_with_access": {
+        "username": "test_user_openig"
+      },
+      "user_org_access_no_dr_financial_role_access": {
+        "username": "test_user_openig_no_dr_financial_user_role"
+      },
+      "user_no_access_at_all": {
+        "username": "test_user_openig_no_dr_financial_user_role_no_org"
+      }
+    },
+    "preprd": {
+      "user_with_access": {
+        "username": "test_user_openig"
+      },
+      "user_org_access_no_dr_financial_role_access": {
+        "username": "test_user_openig_no_dr_financial_user_role"
+      },
+      "user_no_access_at_all": {
+        "username": "test_user_openig_no_dr_financial_user_role_no_org"
+      }
+    }
+  },
+  "settlementMetadataApi": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "settlementCreatorApi": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "atlas": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "its": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "mom": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+},
+  "createSettlementOutputSQS": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createIntervalsInputSQS": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createIntervalsOutputSQS": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "orchestratorInputFifoSQS": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "creatorInputFifoSQS" : {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "ecoInputSQS": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "ecoOutputSQS": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "ecoInternalInputSQS_DLQ": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createItemsInputSQS": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createSettlementOutputSQS_DLQ": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createItemsInputSQS_DLQ": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createIntervalsInputSQS_DLQ": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createIntervalsOutputSQS_DLQ": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    }
+  },
+  "createSettlementArn": {
+    "url": {
+      "dev": "",
+      "preprd": ""
+    }
+  },
+  "reference": {
+    "url": {
+      "devtest": "",
+      "dev": "",
+      "preprd": "",
+      "prd": ""
+    },
+    "endpoints": {
+      "settlement_asset_types": [
+        "LOAD","DER_BESS", "DER_PV", "DER_GEN", "DER_FUEL_CELL","LOAD_APPARENT","LOAD_POWER_FACTOR","LOAD_REACTIVE"
+      ],
+      "settlement_business_process_statuses": [
+        "NOT_STARTED", "IN_PROCESS", "COMPLETE"
+      ],
+      "settlement_interval_sources": [
+        "AVAILABILITY","OFFER","UTILITY_BILLED", "UTILITY", "MEASURED", "INTERPOLATION", "MISSING", "UTILITY_TRANSFORM", "DEROS", "MARKET_INTEGRATION", "VENDOR_METERING"
+      ],
+      "settlement_item_statuses": [
+        "AWAITING_DATA", "PRELIMINARY", "FINALIZED", "NO_DATA"
+      ],
+      "settlement_levels": [
+        "METER", "ACCOUNT", "REGISTRATION", "RESOURCE","PORTFOLIO"
+      ],
+      "settlement_statuses": [
+        "AWAITING_DATA", "PRELIMINARY", "FINALIZED", "NO_DATA"
+      ],
+      "settlement_types": [
+        "EVENT", "ENROLLMENT", "ONGOING_DATA_SUBMISSION", "MONTHLY_BILL_SAVINGS", "ANCILLARY", "CAPACITY"
+      ],
+      "registration_statuses": [
+        "ACTIVE", "INACTIVE", "ON_HOLD", "READY_TO_ACCEPTANCE_TEST","READY_TO_ENROLL","RETIRED"
+      ],
+      "api_categories/platforms": [
+        "NGP","CLASSIC_DR","ACTIVATION_ENERGY","PROCUREMENT","OTHER","CLASSIC_EIS","DEN"
+      ],
+      "settlement_pipeline_levels": [
+        "SETTLEMENT", "ITEM", "ALL"
+      ],
+        "settlement_pipeline_statuses": [
+          "REQUESTED", "STARTED", "SUCCESS", "FAILURE"
+        ],
+        "settlement_pipeline_steps": [
+          "CREATOR_FIRST", "CREATOR_REST", "CREATOR_REST2", "PERF_ENGINE", "FIN_ENGINE", "ECO", "DONE"
+        ]
+    }
+  },
+  "organizations": {
+    "SmdQaOrg1": {
+      "name": "QAA_IDS_REGIS",
+      "dev": "519b00da-292b-4f42-9f85-82af9de76630",
+      "preprd": "64db6eda-6004-4619-85be-7cad45e1d9a8"
+    },
+    "SmdQaOrgPoland": {
+      "name": "QAA_IDS_POLAND_ORG",
+      "dev": "8a2bbc80-4255-4426-a616-801899011cef",
+      "preprd": "586b02c6-8b77-4efc-91b3-07732390a304"
+    }
+  },
+  "products": {
+    "product1": {
+      "name": "QAA_SETTLEMENT_PRODUCT_A",
+      "dev": "3c978deb-a488-46c5-a4f1-55eb44c01b20",
+      "preprd": "882f5ba4-c791-4a01-9ece-e8bcada699b8"
+    },
+    "product2": {
+      "name": "QAA_SETTLEMENT_PRODUCT_B",
+      "dev": "67ce4f04-d702-495a-ba00-b08c51c2b93c",
+      "preprd": "67a6d4e0-4655-4133-b190-8a23076732f5"
+    },
+    "product3": {
+      "name": "QAA_STM_BDAP_1841_PRODUCT",
+      "dev": "30b642ef-f1f0-48f7-8e8d-e85ff84b5380",
+      "preprd": "7732d372-7025-46a3-b3e5-f5332db4909f"
+    }
+  },
+  "registrations": {
+    "registration1": {
+      "name": "QAA_IDS_REGIS_REG_ONE_SRC",
+      "devUuid": "5502abeb-203f-47ad-8898-b5f03166c5fa",
+      "preprdUuid": "1412dc1b-159c-407d-9391-6ee8f7c3ee09",
+      "flexibleAsset": {
+        "devUuid": "9dbe7788-e3b1-4a37-93c0-1ccc76b3dac5",
+        "preprdUuid": "02754894-3e37-445e-9912-6d725efc28d6"
+      },
+      "serviceDeliveryPoint": {
+        "devUuid": "9e125983-e817-4fed-914b-9bd0ba82fd7f",
+        "preprdUuid": "6a192421-1ab1-4276-9ecf-5068fb7f587d"
+      },
+      "site": {
+        "name": "QAA_IDS_REGIS_LA",
+        "devUuid": "d754e49b-88f5-4af0-81d2-369a185cf049",
+        "preprdUuid": "2926e404-e470-4925-b9fc-fdd94c370338"
+      }
+    },
+    "registration2": {
+      "name": "QAA_IDS_REGIS_REG_30MIN_SRC",
+      "devUuid": "728d90fb-8fb3-47af-b50c-ee6b050872c2",
+      "preprdUuid": "8363eb6a-96f1-41b1-9f52-3a8e3ad20f9f",
+      "flexibleAsset": {
+        "devUuid": "",
+        "preprdUuid": ""
+      },
+      "serviceDeliveryPoint": {
+        "devUuid": "eefc0443-4343-444c-91b5-6b7da7266ad5",
+        "preprdUuid": "3a870b53-a66a-4758-89cb-b4a2e25a307f"
+      },
+      "site": {
+        "name": "QAA_IDS_REGIS_LA",
+        "devUuid": "d754e49b-88f5-4af0-81d2-369a185cf049",
+        "preprdUuid": "2926e404-e470-4925-b9fc-fdd94c370338"
+      }
+    },
+    "registration3": {
+      "name": "QAA_IDS_REGIS_REG_TWO_SRCS",
+      "devUuid": "a675d1bd-fa9f-46b9-b27e-3a2e2cbe27b6",
+      "preprdUuid": "795abedb-fcc7-49a2-981b-6d87d646c110",
+      "flexibleAsset": {
+        "devUuid": "62a143ef-125a-454d-b9a4-ea7a07567c61",
+        "preprdUuid": "71759e2d-19e6-491f-9f1c-f41d9152c052"
+      },
+      "serviceDeliveryPoint": {
+        "devUuid": "0646a313-7bd2-4fd7-bfcb-8828204df840",
+        "preprdUuid": "282ef68f-7854-4b83-b82b-1a03e0b57666"
+      },
+      "site": {
+        "name": "QAA_IDS_REGIS_LA",
+        "devUuid": "d754e49b-88f5-4af0-81d2-369a185cf049",
+        "preprdUuid": "2926e404-e470-4925-b9fc-fdd94c370338"
+      }
+    },
+    "registration4": {
+      "name": "QAA_IDS_POLAND_REG_KRAKOW_SDP",
+      "devUuid": "47321fe1-7bdc-41b3-9071-685a64c61358",
+      "preprdUuid": "b18f5311-2f8a-4d70-ae94-83edd9a4280d",
+      "flexibleAsset": {
+        "devUuid": "",
+        "preprdUuid": ""
+      },
+      "serviceDeliveryPoint": {
+        "devUuid": "47cc1630-eed3-4776-bafb-a6a1253f6e76",
+        "preprdUuid": "a7ba9173-984e-4ac2-9754-42980c18067b"
+      },
+      "site": {
+        "name": "QAA_IDS_POLAND_KRAKOW",
+        "devUuid": "6d20b589-d702-442e-a5b8-8b9edef9bf46",
+        "preprdUuid": "be4c45e2-b45a-487d-a13e-6c67eacf8476"
+      }
+    },
+    "registration5": {
+      "name": "QAA_IDS_POLAND_REG_KRAKOW_FA",
+      "devUuid": "15afb028-0855-48a6-9320-9d4e5dee11bb",
+      "preprdUuid": "69931b35-2b16-4c60-bd8f-0fb513fe6e20",
+      "flexibleAsset": {
+        "devUuid": "4392404d-580e-493d-8899-710ea6ca9cf3",
+        "preprdUuid": "b462d329-e718-4ef2-85a6-1f28b91225db"
+      },
+      "serviceDeliveryPoint": {
+        "devUuid": "",
+        "preprdUuid": ""
+      },
+      "site": {
+        "name": "QAA_IDS_POLAND_KRAKOW",
+        "devUuid": "6d20b589-d702-442e-a5b8-8b9edef9bf46",
+        "preprdUuid": "be4c45e2-b45a-487d-a13e-6c67eacf8476"
+      }
+    },
+    "registration6": {
+      "name": "QAA_IDS_POLAND_REG_LODZ_5MIN",
+      "devUuid": "15afb028-0855-48a6-9320-9d4e5dee11bb",
+      "preprdUuid": "14de7fb0-6fc1-4f77-a7be-905980b2123f",
+      "flexibleAsset": {
+        "devUuid": "",
+        "preprdUuid": ""
+      },
+      "serviceDeliveryPoint": {
+        "devUuid": "9a9c56cc-1a85-478d-bcb2-8d87b2a5965c",
+        "preprdUuid": "6b1d98de-9eb9-4609-b174-f4ceaf7e5e76"
+      },
+      "site": {
+        "name": "QAA_IDS_POLAND_LODZ",
+        "devUuid": "0ed308e9-0240-47f7-810c-238603d0934d",
+        "preprdUuid": "60eaf4cf-f02b-4eb1-ad44-2d26fa00020c"
+      }
+    },
+    "registration7": {
+      "name": "QAA_IDS_POLAND_REG_LODZ_1MIN",
+      "devUuid": "6af5f3c2-6947-4ad1-b354-df2f3403fe34",
+      "preprdUuid": "0e451cc8-95e1-4b00-a076-6d87bccce78c",
+      "flexibleAsset": {
+        "devUuid": "",
+        "preprdUuid": ""
+      },
+      "serviceDeliveryPoint": {
+        "devUuid": "ded2ed88-de9a-4676-b2e6-a61310644f45",
+        "preprdUuid": "5ab271f2-9e87-42da-8c2b-6d6b9513ace2"
+      },
+      "site": {
+        "name": "QAA_IDS_POLAND_LODZ",
+        "devUuid": "0ed308e9-0240-47f7-810c-238603d0934d",
+        "preprdUuid": "60eaf4cf-f02b-4eb1-ad44-2d26fa00020c"
+      }
+    }
+},
+  "itsMappings": {
+    "SmdQaOrg1": {
+      "dev": "519b00da-292b-4f42-9f85-82af9de76630",
+      "preprd": "64db6eda-6004-4619-85be-7cad45e1d9a8"
+    },
+    "SmdQaOrg1InvalidEcrmId": {
+      "dev": "519b00da-292b-4f42-9f85-82af9de76630",
+      "preprd": "64db6eda-6004-4619-85be-7cad45e1d9a8"
+    },
+    "SmdQaOrgPoland": {
+      "dev": "8a2bbc80-4255-4426-a616-801899011cef",
+      "preprd": "586b02c6-8b77-4efc-91b3-07732390a304"
+    },
+    "SmdQaSite1": {
+      "dev": "d754e49b-88f5-4af0-81d2-369a185cf049",
+      "preprd": "2926e404-e470-4925-b9fc-fdd94c370338"
+    },
+    "SmdQaSite1InvalidEcrmId": {
+      "dev": "d754e49b-88f5-4af0-81d2-369a185cf049",
+      "preprd": "2926e404-e470-4925-b9fc-fdd94c370338"
+    },
+    "SmdQaSite2": {
+      "dev": "9999e49b-88f5-4af0-81d2-369a185cf049",
+      "preprd": "9999e49b-9999-0000-1111-369a185cf049"
+    },
+    "SmdQaKrakow": {
+      "dev": "6d20b589-d702-442e-a5b8-8b9edef9bf46",
+      "preprd": "be4c45e2-b45a-487d-a13e-6c67eacf8476"
+    },
+    "SmdQaLodz": {
+      "dev": "0ed308e9-0240-47f7-810c-238603d0934d",
+      "preprd": "60eaf4cf-f02b-4eb1-ad44-2d26fa00020c"
+    }
+  },
+  "productRules": {
+    "AESO": {
+      "dev": "d3adb502-5d78-4ec8-8369-6379be442677",
+      "preprd": "a1643547-425b-4856-8177-524371fa77e6"
+    },
+    "RandomProgram": {
+      "preprd": "48a52ada-f785-4505-9c28-917f82f04ff9"
+    },
+    "GappyProgram": {
+      "preprd": "bab05861-5d9c-4298-8f7b-8f0d68cb77ad"
+    },
+    "FCASRaise1Sec": {
+      "dev": "69c35eab-4ecd-4a34-b692-25396f88c878",
+      "preprd": "1ef635c7-65b2-4945-bdcb-aa2606956cfd",
+      "prd": "4556a736-23c7-4fa1-976f-3cf958b193cc"
+    },
+    "FCASRaise5Min": {
+      "dev": "",
+      "preprd": "eb073537-0e40-4178-aaca-bea9fae106cf",
+      "prd": "fb1ef853-4ff2-4ac5-88e3-7a5313b966ad"
+    },
+    "QAAProduct": {
+      "dev": "",
+      "preprd": "9b553c0a-0000-0000-0000-4973a8373681"
+    }
+  }
+}

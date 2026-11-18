@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mcp-atlassian": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "qa-design/scripts/run_mcp_atlassian.py",
+        "read"
+      ]
+    }
+  }
+}

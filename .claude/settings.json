@@ -1,0 +1,62 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mcp-atlassian__jira_get_issue",
+      "mcp__mcp-atlassian__jira_search",
+      "mcp__mcp-atlassian__jira_get_issue_images",
+      "mcp__mcp-atlassian__jira_download_attachments",
+      "mcp__mcp-atlassian__jira_batch_get_changelogs",
+      "mcp__mcp-atlassian__jira_search_fields",
+      "mcp__mcp-atlassian__jira_get_link_types",
+      "mcp__mcp-atlassian__jira_get_project_issue_types",
+      "mcp__mcp-atlassian__confluence_get_page",
+      "mcp__mcp-atlassian__confluence_search",
+      "mcp__mcp-atlassian__confluence_get_page_children",
+      "mcp__mcp-atlassian__confluence_get_space_page_tree",
+      "mcp__mcp-atlassian__confluence_get_page_images",
+      "mcp__mcp-atlassian__confluence_get_attachments",
+      "mcp__mcp-atlassian__confluence_download_attachment",
+      "mcp__mcp-atlassian__confluence_download_content_attachments",
+      "mcp__mcp-atlassian__confluence_get_page_history",
+      "mcp__mcp-atlassian__confluence_get_page_diff",
+      "mcp__mcp-atlassian__confluence_get_comments",
+      "mcp__mcp-atlassian__confluence_get_inline_comments",
+      "mcp__mcp-atlassian__confluence_get_labels",
+      "Bash(uv run qa-design/tools/sources/prioritize.py:*)",
+      "Bash(uv run qa-design/tools/confluence/versions.py:*)",
+      "Bash(uv run --no-project --with pytest --with pyyaml pytest qa-design/tools/tests:*)",
+      "Bash(mvn -q compile:*)",
+      "Bash(mvn -q -o compile:*)"
+    ],
+    "ask": [
+      "Bash(git push:*)"
+    ],
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/ATLAS_SESSION_*)",
+      "Read(**/config/creds-alias.conf)",
+      "Read(**/config/*.local.json)",
+      "Read(~/.aws/**)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/*.p12)",
+      "Read(**/*.pfx)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "mcp-atlassian"
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PROJECT_DIR:-.}/qa-design/scripts/hooks/session_start.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

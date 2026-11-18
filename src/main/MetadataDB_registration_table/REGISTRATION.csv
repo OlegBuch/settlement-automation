@@ -1,0 +1,2 @@
+put here CSV of query
+SELECT * FROM settlement_metadata."REGISTRATION"
